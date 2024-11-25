@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css.map"/>
+    <title>The Go Frame</title>
+</head>
+
+<body>
+
+    <header class="cabecera blanco">
+        <h3 class="texto--azul-B margen-left margen-top-base">The Go Frame</h3>
+
+<!-------------------------------Introducción y descargas------------------------------->
+
+        <p class="margen-top margen-right__grande margen-left intro">Bienvenidos a The Go Frame un sistema gráfico de reducidas dimensiones surgido de un ejercicio académico para la asignatura "Gráfica interactiva.Usabiliddad" de segundo curso de la especialidad de gráfico en la Escuela Superior de Diseño de Madrid. En los enlaces que aparecen a continuación pueden descargar el archivo de estilos CSS y la fuentes utilizadas en el sistema</p>
+        <div class="flex">
+            <a href="assets/css/style.css" target="_blank" download class="linksimple margen-top-base margen-left">Descarga los estilos</a>
+            <a href="assets/fonts/fonts.zip" target="_blank" download class="linksimple margen-top-base margen-left">Descarga las tipografías</a>
+            <a href="assets/images/images.zip" target="_blank" download class="linksimple margen-top-base margen-left">Descarga las imágenes</a>
+        </div>
+
+<!-------------------------------Menú------------------------------->
+
+        <nav>
+            <ul class="margen-top margen-bottom botonera--media margen-left">
+                <li class="boton--medio radius btn2"><a href="#basicos">básicos</a></li>
+                <li class="boton--medio radius btn2"><a href="#texto">texto</a></li>
+                <li class="boton--medio radius btn2"><a href="#reticulas">retículas</a></li>
+                <li class="boton--medio radius btn2"><a href="#navegacion">navegación</a></li>
+                <li class="boton--medio radius btn2"><a href="#recursos">recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!-------------------------------Básicos------------------------------->
+
+    <section id="#basicos" class="seccion">
+        <h5 class="titulo-contenedor margen-top texto--azul-B margen-bottom padding_left">Componentes básicos</h5>
+
+        <article class="contenedor radius--plus sombra">
+            <p class="instrucciones margen-right__grande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem impedit aliquam animi? Soluta officiis fuga deserunt! Eos ipsa similique et commodi aspernatur beatae autem corrupti, excepturi optio ex. Ut, itaque.</p>
+
+            <!--Márgenes-->
+            <div>
+                <h6 class="texto--azul-B margen-top">Márgenes y padding</h6>
+                <p class="instrucciones">Utilizamos márgenes generales de 16px <span class="pie">(clase: margen_general)</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;margen_general&quot;&gt;Ponga aqu&iacute; su contenido&lt;/div&gt;</code></pre>
+                <p class="instrucciones">Utilizamos paddings generales de 16px <span class="pie">(clase: padding_general)</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;padding_general&quot;&gt;Ponga aqu&iacute; su contenido&lt;/div&gt;</code></pre>
+            </div>
+            
+            <!--Paddings-->
+            
+            <!--Colores-->
+            <div>
+                <h6 class="texto--azul-B margen-top">Colores</h6>
+                <p class="instrucciones">La gama de colores básicos del sistema se divide en tres grupos.</p>
+
+                <div class="grupo">01. Básicos<div>
+                    <div class="item">
+                        <div class="flex flex-center">
+                            <div class="pastilla  negro"></div><span class="pie">negro (clase: negro)</span>
+                        </div>
+                            <div class="flex flex-center">
+                        <div class="pastilla  blanco contorno"></div><span class="pie">blanco (clase: blanco)</span>
+                        </div>  
+                    </div>
+                    <pre class="codigo"><code>
+&lt;div class=&quot;negro&quot;&gt;Fondo de color negro&lt;/div&gt;
+    
+&lt;div class=&quot;blanco&quot;&gt;Fondo de color blanco&lt;/div&gt;                      
+                    </code></pre>
+
+                <div class="grupo">02. Azules<div>
+                <div class="item">
+                    <div class="flex flex-center">
+                        <div class="pastilla  azul-A"></div><span class="pie">azul alto (clase: azul-A)</span>
+                    </div>
+                    <div class="flex flex-center">
+                        <div class="pastilla  azul-B"></div><span class="pie">azul medio (clase: azul-B)</span>
+                    </div>
+                    <div class="flex flex-center">
+                        <div class="pastilla  azul-C"></div><span class="pie">azul bajo (clase: azul-C)</span>
+                    </div>
+                </div>
+                <pre class="codigo"><code>
+&lt;div class=&quot;azul-A&quot;&gt;Fondo de color azul alto&lt;/div&gt;
+
+&lt;div class=&quot;azul-B&quot;&gt;Fondo de color azul medio&lt;/div&gt;
+
+&lt;div class=&quot;azul-C&quot;&gt;Fondo de color azul bajo&lt;/div&gt;                         
+                </code></pre>
+
+                <div class="grupo">03. Grises<div>
+                    <div class="item">
+                        <div class="flex flex-center">
+                            <div class="pastilla  gris-A"></div><span class="pie">gris alto (clase: gris-A)</span>
+                        </div>
+                        <div class="flex flex-center">
+                            <div class="pastilla  gris-B"></div><span class="pie">gris medio (clase: gris-B)</span>
+                        </div>
+                        <div class="flex flex-center">
+                            <div class="pastilla  gris-C"></div><span class="pie">gris bajo (clase: gris-C)</span>
+                    </div>
+                    </div>
+                    <pre class="codigo"><code>
+
+&lt;div class=&quot;gris-A&quot;&gt;Fondo de color gris alto&lt;/div&gt;
+
+&lt;div class=&quot;gris-B&quot;&gt;Fondo de color gris medio&lt;/div&gt;
+
+&lt;div class=&quot;gris-C&quot;&gt;Fondo de color gris bajo&lt;/div&gt;                                         
+                    </code></pre>
+            </div>
+
+            <!--Contornos-->
+            <div>
+                <h6 class="texto--azul-B margen-top">Contornos</h6>
+                <p class="instrucciones">Los contenedores se construyen mediante colores de relleno que se diferencien del fondo, y mediante el uso de sombras. Botones y contedores usan esquinas redondeadas para las que se distinguen dos tipos de radios.</p>
+
+                <div class="item">
+                    <div class="flex flex-center">
+                        <div class="pastilla radius azul-B"></div><span class="pie">radio de 16px (clase: radius)</span>
+                    </div>      
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;pastilla--grande radius azul-B&quot;&gt;&lt;/div&gt;</code></pre>
+
+                <div class="item">
+                    <div class="flex flex-center">
+                        <div class="pastilla radius--plus azul-B"></div><span class="pie">radio de 64px (clase: radius--plus)</span>
+                    </div>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;pastilla--grande radius--plus azul-B&quot;&gt;</code></pre>
+            </div>
+
+
+            <!--Sombras-->
+            <div class="margen-bottom">
+                <h6 class="texto--azul-B margen-top">Sombras</h6>
+                <p class="instrucciones">Las pastillas llevan sombras <span class="pie">(clase: sombra)</span></p>
+
+                <div class="item">
+                    <div class="pastilla--grande radius--plus gris-C sombra"></div>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;pastilla--grande radius--plus gris-C sombra&quot;&gt;</code></pre>
+            </div>
+
+            <!--Fondo-->
+            <div class="margen-bottom">
+                <h6 class="texto--azul-B margen-top">Fondo</h6>
+                <p class="instrucciones">Los fondos de página son de color gris, ya que nuestros menus y resto de componentes solo se construyen sin bordes. Solo con color blanco y sombra. La etiqueta "body" lleva aplicado este color por defecto</p>
+                <p class="pie">(etiqueta: body)</p>
+
+                <div class="item gris-C padding_general">
+                    <div class="pastilla--grande radius--plus blanco sombra margen_general"></div>
+                </div>
+                <pre class="codigo"><code>&lt;body&gt;Nuestro fondo es Gris Bajo&lt;/body&gt;</code></pre>
+            </div>
+
+           
+            <a class="botonera--media boton--medio btn2 radius margen-top volver" href="#">Volver al menú</a>
+        </article>
+    </section>
+
+
+<!-------------------------------Texto------------------------------->
+       
+    <section id="texto" class="seccion">
+
+        <h5 class="titulo-contenedor margen-top texto--azul-B margen-bottom padding_left">Texto</h5>
+
+        <article class="contenedor radius--plus sombra">
+            <p class="instrucciones margen-right__grande">El sistema gráfico utiliza tres variantes tipográfica de la super familia Roboto:</p>
+            <p class="roboto_slab">Roboto Slab</p>
+            <p class="roboto">Roboto</p>
+            <p class="roboto_condensed">Roboto Condensed</p>
+            <p class="instrucciones margen-right__grande margen-top">A partir de ellas se configuran los siguientes estilos.</p>
+
+            <h6 class="texto--azul-B margen-top">Titulares</h6>
+            <div>
+                <h1>Titular h1</h1>
+                <p class="pie texto--gris-A">clase: h1</p>
+                </div>
+                <pre class="codigo"><code>&lt;h1&gt;Titular h1&lt;/h1&gt;</code></pre>
+            </div>
+            <div>
+                <h2>Titular h2</h2>
+                <p class="pie texto--gris-A">clase: h2</p>
+                </div>
+                <pre class="codigo"><code>&lt;h2&gt;Titular h2&lt;/h2&gt;</code></pre>
+            </div>
+            <div>
+                <h3>Titular h3</h3>
+                <p class="pie margen-top-base texto--gris-A">clase: h3</p>
+                </div>
+                <pre class="codigo"><code>&lt;h3&gt;Titular h3&lt;/h3&gt;</code></pre>
+            </div>
+            <div>
+                <h4>Titular h4</h4>
+                <p class="pie margen-top-base texto--gris-A">clase: h4</p>
+                </div>
+                <pre class="codigo"><code>&lt;h4&gt;Titular h4&lt;/h4&gt;</code></pre>
+            </div>
+            <div>
+                <h5>Titular h5</h5>
+                <p class="pie margen-top-base texto--gris-A">clase: h5</p>
+                </div>
+                <pre class="codigo"><code>&lt;h5&gt;Titular h5&lt;/h5&gt;</code></pre>
+            </div>
+            <div>
+                <h6>Titular h6</h6>
+                <p class="pie texto--gris-A">clase: h6</p>
+                </div>
+                <pre class="codigo"><code>&lt;h6&gt;Titular h6&lt;/h6&gt;</code></pre>
+            </div>
+
+            <h6 class="texto--azul-B margen-top">Entradilla y párrafo</h6>
+            <div>
+                <div class="entradilla margen-top-base">Ejemplo de entradilla</div>
+                <p class="pie margen-top-base texto--gris-A">clase: entradilla</p>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;entradilla&quot;&gt;Ejemplo de entradilla&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+                <p><span class="negrita">Ejemplo de párrafo y texto simulado.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempore id voluptatibus similique veritatis officiis, nihil quam eveniet vero numquam cumque minima facilis necessitatibus itaque modi reprehenderit! Amet, quaerat cupiditate.</p>
+                <p class="pie texto--gris-A">Etiqueta HTML: p</p>
+                </div>
+                <pre class="codigo"><code>&lt;p&gt;Ejemplo de p&aacute;rrafo y texto simulado. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Quae tempore id voluptatibus similique veritatis officiis, nihil quam eveniet vero numquam cumque 
+minima facilis necessitatibus itaque modi reprehenderit! Amet, quaerat cupiditate.&lt;/p&gt;</code></pre>
+            </div>
+
+            <h6 class="texto--azul-B margen-top">Anotaciones y pies</h6>
+            <div>
+                <div class="masinfo">Ejemplo de texto con más información</div>
+                <p class="pie margen-top-base texto--gris-A">clase: masinfo</p>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;masinfo&quot;&gt;Ejemplo de texto con m&aacute;s informaci&oacute;n&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+                <div class="pie">Ejemplo de pie de foto</div>
+                <p class="pie margen-top-base texto--gris-A">clase: pie</p>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;pie&quot;&gt;Ejemplo de pie de foto&lt;/div&gt;</code></pre>
+            </div>
+            <div>
+                <div class="peq">Ejemplo de texto pequeño para ubicar en el footer</div>
+                <p class="pie margen-top-base texto--gris-A">clase: peq</p>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;peq&quot;&gt;Ejemplo de texto peque&ntilde;o para ubicar en el footer&lt;/div&gt;</code></pre>
+            </div>
+
+            <h6 class="texto--azul-B margen-top">Iconos</h6>
+            <div>
+                <p>El sistema gráfico cuenta con una pequeña galería de iconos construidos a partir de la tipografía Iconvault. Los iconos se introducen en la maquetación mediante caracteres escritos en el propio HTML dentro de la etiqueta correspondiente</p>
+                
+                <p class="pie margen-top-base texto--gris-A">clase: icono</p>
+                <p class="pie margen-top-base margen-bottom-base">Corazón<span class="icono texto--azul-B">&#xf105</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf105&lt;/div&gt;</code></pre>
+                <p class="pie margen-top-base margen-bottom-base">Reloj<span class="icono texto--azul-B">&#xf104</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf104&lt;/div&gt;</code></pre>
+                <p class="pie margen-top-base margen-bottom-base">Lupa<span class="icono texto--azul-B">&#xf10a</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf10a&lt;/div&gt;</code></pre>
+                <p class="pie margen-top-base margen-bottom-base">Soleado<span class="icono texto--azul-B">&#xf110</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf110&lt;/div&gt;</code></pre>
+                <p class="pie margen-top-base margen-bottom-base">Lluvioso<span class="icono texto--azul-B">&#xf116</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf116&lt;/div&gt;</code></pre>
+                <p class="pie margen-top-base margen-bottom-base">Bocadillo<span class="icono texto--azul-B">&#xf115</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf115&lt;/div&gt;</code></pre>
+                <p class="pie margen-top-base margen-bottom-base">Correo<span class="icono texto--azul-B">&#xf109</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf109&lt;/div&gt;</code></pre>
+                <p class="pie margen-top-base margen-bottom-base">Descarga<span class="icono texto--azul-B">&#xf10d</span></p>
+                <pre class="codigo"><code>&lt;div class=&quot;icono texto--azul-B&quot;&gt;&amp;#xf10d&lt;/div&gt;</code></pre>
+            </div>
+
+            <h6 class="texto--azul-B margen-top">Colores de texto</h6>
+            <div>
+                <p>Los textos disponen de sus propias clases para la apliación de la gama descrita en el apartado anterior</p>
+                <div class="masinfo">Mi texto puede ser azul <span class="negrita texto--azul-A"> alto,</span> <span class="negrita texto--azul-B">medio</span> <span class="negrita texto--azul-C">y bajo.</span>También <span class="negrita texto--gris-A">gris alto,</span>  <span class="negrita texto--gris-B">medio</span> <span class="negrita texto--gris-C">y bajo</span></div>
+                <p class="pie margen-top-base texto--gris-A">clase: texto--color-letra</p>
+                </div>
+                <pre class="codigo"><code>&lt;h6 class=&quot;texto--azul-A&quot;&gt;texto azul alto&lt;/h6&gt;
+&lt;h6 class=&quot;texto--azul-B&quot;&gt;texto azul medio&lt;/h6&gt;
+&lt;h6 class=&quot;texto--azul-C&quot;&gt;texto azul bajo&lt;/h6&gt;
+&lt;h6 class=&quot;texto--gris-A&quot;&gt;texto gris alto&lt;/h6&gt;
+&lt;h6 class=&quot;texto--gris-B&quot;&gt;texto gris medio&lt;/h6&gt;
+&lt;h6 class=&quot;texto--gris-C&quot;&gt;texto gris bajo&lt;/h6&gt;</code></pre>
+            </div>
+
+            <a class="botonera--media boton--medio btn2 radius volver" href="#">Volver al menú</a>
+        </article>
+
+    </section>
+
+<!-------------------------------Retículas------------------------------->
+
+    <section id="reticulas" class="seccion">
+
+        <h5 class="titulo-contenedor margen-top texto--azul-B margen-bottom padding_left">Retículas</h5>
+
+        <article class="contenedor radius--plus sombra">
+            <p class="instrucciones margen-right__grande">El sistema gráfico dispone de una rejilla o grid sobre la que maquetar los elemeentos de nuestra página. Se trata de una retícula de 12, 8 y 4 columnas de ancho, para las dimensiones desktop, tablet y móvil respectivamente</p>
+            <p class="pie margen-top-base texto--gris-A margen-bottom-base">clase: rejilla</p>
+
+            <div class="rejilla azul-C padding_general margen-bottom-base ancho_rejilla">
+                <h6 class="rejilla__cell texto--azul-B">01</h6>
+                <h6 class="rejilla__cell texto--azul-B">02</h6>
+                <h6 class="rejilla__cell texto--azul-B">03</h6>
+                <h6 class="rejilla__cell texto--azul-B">04</h6>
+                <h6 class="rejilla__cell texto--azul-B">05</h6>
+                <h6 class="rejilla__cell texto--azul-B">06</h6>
+                <h6 class="rejilla__cell texto--azul-B">07</h6>
+                <h6 class="rejilla__cell texto--azul-B">08</h6>
+                <h6 class="rejilla__cell texto--azul-B">09</h6>
+                <h6 class="rejilla__cell texto--azul-B">10</h6>
+                <h6 class="rejilla__cell texto--azul-B">11</h6>
+                <h6 class="rejilla__cell texto--azul-B">12</h6>
+                <h6 class="rejilla__cell texto--azul-B">13</h6>
+                <h6 class="rejilla__cell texto--azul-B">14</h6>
+                <h6 class="rejilla__cell texto--azul-B">15</h6>
+                <h6 class="rejilla__cell texto--azul-B">16</h6>
+                <h6 class="rejilla__cell texto--azul-B">17</h6>
+                <h6 class="rejilla__cell texto--azul-B">18</h6>
+                <h6 class="rejilla__cell texto--azul-B">19</h6>
+                <h6 class="rejilla__cell texto--azul-B">20</h6>
+                <h6 class="rejilla__cell texto--azul-B">21</h6>
+                <h6 class="rejilla__cell texto--azul-B">22</h6>
+                <h6 class="rejilla__cell texto--azul-B">23</h6>
+                <h6 class="rejilla__cell texto--azul-B">24</h6>
+                <h6 class="rejilla__cell texto--azul-B">25</h6>
+                <h6 class="rejilla__cell texto--azul-B">26</h6>
+                <h6 class="rejilla__cell texto--azul-B">27</h6>
+                <h6 class="rejilla__cell texto--azul-B">28</h6>
+                <h6 class="rejilla__cell texto--azul-B">29</h6>
+                <h6 class="rejilla__cell texto--azul-B">30</h6>
+                <h6 class="rejilla__cell texto--azul-B">31</h6>
+                <h6 class="rejilla__cell texto--azul-B">32</h6>
+                <h6 class="rejilla__cell texto--azul-B">33</h6>
+                <h6 class="rejilla__cell texto--azul-B">34</h6>
+                <h6 class="rejilla__cell texto--azul-B">35</h6>
+                <h6 class="rejilla__cell texto--azul-B">36</h6>
+            </div>
+            <pre class="codigo margen-top"><code>&lt;div class=&quot;rejilla azul-C padding_general&quot;&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;01&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;02&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;03&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;04&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;05&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;06&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;07&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;08&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;09&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;10&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;11&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;12&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;13&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;14&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;15&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;16&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;17&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;18&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;19&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;20&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;21&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;22&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;23&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;24&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;25&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;26&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;27&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;28&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;29&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;30&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;31&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;32&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;33&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;34&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;35&lt;/h6&gt;
+                &lt;h6 class=&quot;rejilla__cell texto--azul-B&quot;&gt;36&lt;/h6&gt;
+        &lt;/div&gt;</code></pre>
+
+            <a class="botonera--media boton--medio btn2 radius volver" href="#">Volver al menú</a>
+        </article>
+
+    </section>
+
+<!-------------------------------Navegación------------------------------->
+
+    <section id="navegacion" class="seccion">
+
+        <h5 class="titulo-contenedor margen-top texto--azul-B margen-bottom padding_left">Navegación</h5>
+
+        <article class="contenedor radius--plus sombra">
+            <p class="instrucciones margen-right__grande">El sistema gráfico cuenta con varias tipologías de botones que se conforman en menús de navegación</p>
+
+            <div>
+                <h6 class="texto--azul-B margen-top">Links simples y en línea</h6>
+                <p class="instrucciones">Podemos establecer vínculos en la página con recursos mínimos con los links simples. Puede probar el efecto de hover en el ejempplo bajo estas líneas.<span class="pie">(clase: linksimple)</span></p>
+                <a class="linksimple margen-bottom-base" href="#url">link simple</a>
+                <pre class="codigo"><code>&lt;a class=&quot;linksimple&quot; href=&quot;#url&quot;&gt;link simple&lt;/a&gt;</code></pre>
+                <p class="instrucciones">O integrar estos hipervínculos en el flujo de texto con los links en línea. Cuentan con su correspondiente estado de hover y visitado que puede probar en ejempplo que figura a continuación.<span class="pie">(clase: linklinea)</span></p>
+                <p class="texto--azul-B">Un ejemplo de texto con un <a class="linklinea" href="#url">link en línea</a> integrado en el texto.</p>
+                <pre class="codigo"><code>&lt;p&gt;Un ejemplo de texto con un &lt;a class=&quot;linklinea&quot; href=&quot;#url&quot;&gt;link en l&iacute;nea&lt;/a&gt; 
+integrado en el texto.&lt;/p&gt;</code></pre>
+            </div>
+
+            <div>
+                <h6 class="texto--azul-B margen-top">Botones grandes, medios y pequeños</h6>
+                <p class="instrucciones">Contamos con tres tipos de botones que establecen tres niveles jerárquicos en base a su tamaño. Los botone se construyen mediante dos tipos de clases, la que refiere al tamaño de la pastilla (botón--grande, medio y mini) y al correspondiente estilo de texto (btn 1,2 y 3). Por delante de estas dos clases se debe aplicar la clase botonera (botonera grande y media), que establecerá el ancho del botón y sus diposición cuando se utilicen agrupaciones. También se incluirá la clase radius para que sus esquinas sean curvas. Cada uno de los botones cuenta con su correspondiente estado de hover, que puede probarse en los ejemplos planteados a continuación</p>
+                <p class="negrita">Botón grande <span class="pie">(clases: botonera--grande botón--grande radius btn1)</span></p>
+                <div class="botonera--grande">
+                    <button class="boton--grande radius btn1">apartado grande</button>
+                    <button class="boton--grande radius btn1">apartado grande</button>
+                    <button class="boton--grande radius btn1">apartado grande</button>
+                    <button class="boton--grande radius btn1">apartado grande</button>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;botonera--grande&quot;&gt;
+    &lt;button class=&quot;boton--grande radius btn1&quot;&gt;apartado grande&lt;/button&gt;
+    &lt;button class=&quot;boton--grande radius btn1&quot;&gt;apartado grande&lt;/button&gt;
+    &lt;button class=&quot;boton--grande radius btn1&quot;&gt;apartado grande&lt;/button&gt;
+    &lt;button class=&quot;boton--grande radius btn1&quot;&gt;apartado grande&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <p class="negrita">Botón medio <span class="pie">(clases: botonera--media botón--medio radius btn2)</span></p>
+                <div class="botonera--media margen-left margen-bottom-base">
+                    <button class="boton--medio radius btn2">apartado medio</button>
+                    <button class="boton--medio radius btn2">apartado medio</button>
+                    <button class="boton--medio radius btn2">apartado medio</button>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;botonera--media&quot;&gt;
+    &lt;button class=&quot;boton--medio radius btn2&quot;&gt;apartado medio&lt;/button&gt;
+    &lt;button class=&quot;boton--medio radius btn2&quot;&gt;apartado medio&lt;/button&gt;
+    &lt;button class=&quot;boton--medio radius btn2&quot;&gt;apartado medio&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <p class="negrita">Botón pequeño <span class="pie">(clases: botonera--media botón--mini radius btn3)</span></p>
+                <div class="botonera--media margen-left margen-bottom-base">
+                    <button class="boton--mini radius btn3">apartado mini</button>
+                    <button class="boton--mini radius btn3">apartado mini</button>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;botonera--media&quot;&gt;
+    &lt;button class=&quot;boton--mini radius btn3&quot;&gt;apartado mini&lt;/button&gt;
+    &lt;button class=&quot;boton--mini radius btn3&quot;&gt;apartado mini&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+
+<div>
+    <h6 class="texto--azul-B margen-top">Menú de navegación</h6>
+    <p class="instrucciones">La combinación de botoneras da lugar al menú principal. Para su construcción usamos la clase menu, que podemos combinar con la clase submenu si contamos con subapartados. Añadimos las clases blanco (para el color), radius (esquinas curvas) y sombra <span class="pie">(clase: menu blanco radius sombra)</span></p>
+    <a class="linksimple margen-bottom-base" href="#url">link simple</a>
+    <div class="ejemplo margen-bottom-base">
+        <nav class="menu radius sombra blanco margen-bottom">
+            <img src="assets/images/mini_go.png" alt="logotipo" class="logo radius verde">
+            <ul class="botonera--grande">
+                <li class="boton--grande boton--grande--principal radius btn1"><a href="#">home</a></li>
+                <li class="boton--grande radius btn1"><a href="#">apartado 1</a></li>            
+                <li class="relative"><a class="boton--grande radius btn1" href="#">apartado 2</a>
+                    <ul class="submenu botonera--media vertical">
+                        <li class="boton--medio radius btn2"><a href="#">sub-apartado</a></li>
+                        <li class="boton--medio radius btn2"><a href="#">sub-apartado</a></li>
+                        <li class="boton--medio radius btn2"><a href="#">sub-apartado</a></li>
+                    </ul>
+                </li>
+                <li class="boton--grande radius btn1"><a href="#">apartado 3</a></li>
+                <li class="boton--grande radius btn1"><a href="#">apartado 4</a></li>
+            </ul>
+        </nav>
+    </div>
+    <pre class="codigo"><code>&lt;nav class=&quot;menu radius sombra blanco&quot;&gt;
+    &lt;img src=&quot;assets/images/mini_go.png&quot; alt=&quot;logotipo&quot; class=&quot;logo radius verde&quot;&gt;
+    &lt;ul class=&quot;botonera--grande&quot;&gt;
+        &lt;li class=&quot;boton--grande boton--grande--principal radius btn1&quot;&gt;&lt;a href=&quot;#&quot;&gt;home&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;boton--grande radius btn1&quot;&gt;&lt;a href=&quot;#&quot;&gt;apartado 1&lt;/a&gt;&lt;/li&gt;            
+        &lt;li class=&quot;relative&quot;&gt;&lt;a class=&quot;boton--grande radius btn1&quot; href=&quot;#&quot;&gt;apartado 2&lt;/a&gt;
+                &lt;ul class=&quot;submenu botonera--media vertical&quot;&gt;
+                    &lt;li class=&quot;boton--medio radius btn2&quot;&gt;&lt;a href=&quot;#&quot;&gt;sub-apartado&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;boton--medio radius btn2&quot;&gt;&lt;a href=&quot;#&quot;&gt;sub-apartado&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;boton--medio radius btn2&quot;&gt;&lt;a href=&quot;#&quot;&gt;sub-apartado&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;boton--grande radius btn1&quot;&gt;&lt;a href=&quot;#&quot;&gt;apartado 3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;boton--grande radius btn1&quot;&gt;&lt;a href=&quot;#&quot;&gt;apartado 4&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                </div>                
+            </div>
+ 
+            <a class="botonera--media boton--medio btn2 radius volver" href="#">Volver al menú</a>
+
+        </article>
+
+    </section>
+
+<!-------------------------------Recursos------------------------------->
+
+    <section id="recursos" class="seccion">
+
+        <h5 class="titulo-contenedor margen-top texto--azul-B margen-bottom padding_left">Recursos</h5>
+
+        <article class="contenedor radius--plus sombra">
+            <p class="instrucciones margen-right__grande">Nuestro sistema gráfico cuenta con una serie de recursos a partir de los cuales poder construir una página con varios niveles de contenido.</p>
+
+            <!--Listado-->
+        
+            <div>
+                <h6 class="texto--azul-B margen-top">Listado</h6>
+                <p class="instrucciones">El recurso más sencillo sería la lista <span class="pie">(etiquetas HTML: ul li)</span></p>
+                <ul class="margen-bottom-base padding_left">
+                    <li><p class="negrita texto--azul-B">Apartado 1</p></li>
+                        <ul>
+                            <li><p class="masinfo padding_left">· Sub apartado A</p></li>
+                            <li><p class="masinfo padding_left">· Sub apartado B</p></li>
+                        </ul>
+                    <li><p class="negrita texto--azul-B">Apartado 2</p></li>
+                    <li><p class="negrita texto--azul-B">Apartado 3</p></li>
+                </ul>
+                <pre class="codigo"><code>&lt;ul class=&quot;margen-bottom-base padding_left&quot;&gt;
+    &lt;li&gt;&lt;p class=&quot;negrita texto--azul-B&quot;&gt;Apartado 1&lt;/p&gt;&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;p class=&quot;masinfo padding_left&quot;&gt;&middot; Sub apartado A&lt;/p&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;p class=&quot;masinfo padding_left&quot;&gt;&middot; Sub apartado B&lt;/p&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;li&gt;&lt;p class=&quot;negrita texto--azul-B&quot;&gt;Apartado 2&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;p class=&quot;negrita texto--azul-B&quot;&gt;Apartado 3&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+
+            <!--Tabla-->
+            
+            <div>
+                <h6 class="texto--azul-B margen-top">Tabla</h6>
+                <p class="instrucciones">El sistema permite plantear tablas sencillas para analizar datos de manera comparada. Las tablas se ubican dentro de la rejilla mediante la clase ubicacion.<span class="pie">(clase: tabla ubicacion)</span></p>
+                <div class="rejilla margen-bottom ancho_rejilla">
+
+                    <div class="tabla ubicacion">
+            
+                        <div class="tabla__cabecera tabla__fila masinfo">
+                            <h6 class="tabla__celda azul-B texto--blanco">Client</h6>
+                            <h6 class="tabla__celda azul-B texto--blanco">Web</h6>
+                            <h6 class="tabla__celda azul-B texto--blanco">Project</h6>
+                            <h6 class="tabla__celda azul-B texto--blanco">Date</h6>
+                            <h6 class="tabla__celda azul-B texto--blanco c cifras--responsive">Quote <span class="peq">(eur)</span></h6>
+                        </div>
+            
+                        
+                        <div class="tabla__fila masinfo">            
+                            <div class="tabla__celda">Greenpeace</div>
+                            <div class="tabla__celda">greenpeace.org</div>
+                            <div class="tabla__celda">Señalización barcos</div>
+                            <div class="tabla__celda">06/12/2016</div>
+                            <div class="tabla__celda justificado_derecha cifras--responsive">0,00</div>
+                        </div>
+            
+                        <div class="tabla__fila masinfo">  
+                            <div class="tabla__celda gris-C">Museo del Prado</div>
+                            <div class="tabla__celda gris-C">museodelprado.es</div>
+                            <div class="tabla__celda gris-C">Diseño expositivo</div>
+                            <div class="tabla__celda gris-C">10/02/2018</div>
+                            <div class="tabla__celda gris-C justificado_derecha cifras--responsive">2200,00</div>
+                        </div>
+            
+                        <div class="tabla__fila masinfo">  
+                            <div class="tabla__celda">Ministerio de cultura</div>
+                            <div class="tabla__celda">culturaydeporte.gob.es</div>
+                            <div class="tabla__celda">Plan Lector 2019</div>
+                            <div class="tabla__celda">22/09/2018</div>
+                            <div class="tabla__celda justificado_derecha cifras--responsive">15000,10</div>
+                        </div>
+            
+                        <div class="tabla__fila masinfo"> 
+                            <div class="tabla__celda gris-C">Santillana</div> 
+                            <div class="tabla__celda gris-C">santillana.es</div>
+                            <div class="tabla__celda gris-C">Línea gráfica colección</div>
+                            <div class="tabla__celda gris-C">15/03/2019</div>
+                            <div class="tabla__celda gris-C justificado_derecha cifras--responsive">15000,60</div>
+                        </div>
+            
+            
+                        <div class="tabla__fila masinfo"> 
+                            <div class="tabla__celda">Google España</div>
+                            <div class="tabla__celda">es.google.com</div>
+                            <div class="tabla__celda">Emoticonos inclusivos</div>
+                            <div class="tabla__celda">04/01/2020</div>
+                            <div class="tabla__celda justificado_derecha cifras--responsive">6000,00</div>
+                        </div>
+                
+                   
+                        <div class="tabla__fila masinfo">
+                            <div class="tabla__celda gris-C">Penguin Books</div>
+                            <div class="tabla__celda gris-C">penguinlibros.com</div>
+                            <div class="tabla__celda gris-C">Rotulación novela gráfica</div>
+                            <div class="tabla__celda gris-C">18/11/2021</div>
+                            <div class="tabla__celda gris-C justificado_derecha cifras--responsive">2500,63</div>
+                        </div>
+            
+                    </div>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;rejilla margen-bottom ancho_rejilla&quot;&gt;
+
+    &lt;div class=&quot;tabla ubicacion&quot;&gt;
+            
+        &lt;div class=&quot;tabla__cabecera tabla__fila masinfo&quot;&gt;
+             &lt;h6 class=&quot;tabla__celda azul-B texto--blanco&quot;&gt;Client&lt;/h6&gt;
+             &lt;h6 class=&quot;tabla__celda azul-B texto--blanco&quot;&gt;Web&lt;/h6&gt;
+             &lt;h6 class=&quot;tabla__celda azul-B texto--blanco&quot;&gt;Project&lt;/h6&gt;
+             &lt;h6 class=&quot;tabla__celda azul-B texto--blanco&quot;&gt;Date&lt;/h6&gt;
+             &lt;h6 class=&quot;tabla__celda azul-B texto--blanco c cifras--responsive&quot;&gt;
+             Quote &lt;span class=&quot;peq&quot;&gt;(eur)&lt;/span&gt;&lt;/h6&gt;
+        &lt;/div&gt;            
+                        
+        &lt;div class=&quot;tabla__fila masinfo&quot;&gt;            
+            &lt;div class=&quot;tabla__celda&quot;&gt;Greenpeace&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;greenpeace.org&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;Se&ntilde;alizaci&oacute;n barcos&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;06/12/2016&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda justificado_derecha cifras--responsive&quot;&gt;0,00&lt;/div&gt;
+        &lt;/div&gt;
+            
+        &lt;div class=&quot;tabla__fila masinfo&quot;&gt;  
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;Museo del Prado&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;museodelprado.es&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;Dise&ntilde;o expositivo&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;10/02/2018&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C justificado_derecha cifras--responsive&quot;&gt;2200,00&lt;/div&gt;
+        &lt;/div&gt;
+            
+        &lt;div class=&quot;tabla__fila masinfo&quot;&gt;  
+            &lt;div class=&quot;tabla__celda&quot;&gt;Ministerio de cultura&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;culturaydeporte.gob.es&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;Plan Lector 2019&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;22/09/2018&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda justificado_derecha cifras--responsive&quot;&gt;15000,10&lt;/div&gt;
+        &lt;/div&gt;
+            
+        &lt;div class=&quot;tabla__fila masinfo&quot;&gt; 
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;Santillana&lt;/div&gt; 
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;santillana.es&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;L&iacute;nea gr&aacute;fica colecci&oacute;n&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;15/03/2019&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C justificado_derecha cifras--responsive&quot;&gt;15000,60&lt;/div&gt;
+        &lt;/div&gt;
+       
+        &lt;div class=&quot;tabla__fila masinfo&quot;&gt; 
+            &lt;div class=&quot;tabla__celda&quot;&gt;Google Espa&ntilde;a&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;es.google.com&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;Emoticonos inclusivos&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda&quot;&gt;04/01/2020&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda justificado_derecha cifras--responsive&quot;&gt;6000,00&lt;/div&gt;
+        &lt;/div&gt;
+                
+                   
+        &lt;div class=&quot;tabla__fila masinfo&quot;&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;Penguin Books&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;penguinlibros.com&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;Rotulaci&oacute;n novela gr&aacute;fica&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C&quot;&gt;18/11/2021&lt;/div&gt;
+            &lt;div class=&quot;tabla__celda gris-C justificado_derecha cifras--responsive&quot;&gt;2500,63&lt;/div&gt;
+        &lt;/div&gt;
+            
+    &lt;/div&gt;
+
+&lt;/div&gt;<code></pre>
+            </div>
+
+
+            <!--Card-->
+
+            <div>
+                <h6 class="texto--azul-B margen-top">Tarjeta</h6>
+                <p class="instrucciones">El diseño de tarjeta cuenta con versiones vertical y horizontal. En el caso de la tarjeta vertical, esta pasa a ser horizontal en las versiones tablet y móvil.</p>
+                <p class="pie margen-bottom-base">(clase: card--vertical radius--plus sombra)</p>
+                <!--card vertical-->
+                <div class="ejemplo margen-bottom-base">
+                    <div class="card--vertical radius--plus sombra margen-bottom">
+                        <img src="assets/images/imagen_card_01.jpg" alt="iustración tipo" class="card__image radius--plus--top">
+                        <div class="card__datos">
+                            <div class="card__cabecera">
+                                <h6>Título de la card</h6>
+                                <div class="pie texto--azul-B">Ejemlo de pie</div>
+                            </div>
+                            <div class="card_cuerpo">
+                                <p class="margen-bottom-base"> Hola Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum mollitia tenetur maxime qui ab vitae eum perspiciatis laborum aliquid, vel porro quam sapiente repudiandae?</p>
+                                <a class="boton--mini radius btn3" href="#">apartado mini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <pre class="codigo"><code>&lt;div class=&quot;card--vertical radius--plus sombra&quot;&gt;
+    &lt;img src=&quot;assets/images/imagen_card_01.jpg&quot; alt=&quot;iustraci&oacute;n tipo&quot; class=&quot;card__image 
+    radius--plus--top&quot;&gt;
+    &lt;div class=&quot;card__datos&quot;&gt;
+        &lt;div class=&quot;card__cabecera&quot;&gt;
+            &lt;h6&gt;T&iacute;tulo de la card&lt;/h6&gt;
+            &lt;div class=&quot;pie texto--azul-B&quot;&gt;Ejemlo de pie&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card_cuerpo&quot;&gt;
+            &lt;p class=&quot;margen-bottom-base&quot;&gt; Hola Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. Ipsum mollitia tenetur maxime qui ab vitae eum perspiciatis 
+            laborum aliquid, vel porro quam sapiente repudiandae?&lt;/p&gt;
+            &lt;a class=&quot;boton--mini radius btn3&quot; href=&quot;#&quot;&gt;apartado mini&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <p class="pie margen-bottom-base">(clase: card--horizontal radius--plus sombra)</p>
+            <!--card horizontal-->
+            <div class="ejemplo margen-bottom-base">
+                <div class="card--horizontal radius--plus sombra">
+                    <img src="assets/images/imagen_card_01.jpg" alt="iustración tipo" class="card__image radius--plus--left image_horz">
+                    <div class="card__datos">
+                        <div class="card__cabecera">
+                            <h6>Título de la card</h6>
+                            <div class="pie texto--azul-B">Ejemlo de pie</div>
+                        </div>
+                        <div class="card_cuerpo">
+                            <p class="margen-bottom-base"> Hola Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum mollitia tenetur maxime qui ab vitae eum perspiciatis laborum aliquid, vel porro quam sapiente repudiandae?</p>
+                            <a class="boton--mini radius btn3" href="#">apartado mini</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <pre class="codigo"><code>&lt;div class=&quot;card--horizontal radius--plus sombra&quot;&gt;
+    &lt;img src=&quot;assets/images/imagen_card_01.jpg&quot; alt=&quot;iustraci&oacute;n tipo&quot; class=&quot;card__image 
+    radius--plus--left image_horz&quot;&gt;
+    &lt;div class=&quot;card__datos&quot;&gt;
+        &lt;div class=&quot;card__cabecera&quot;&gt;
+            &lt;h6&gt;T&iacute;tulo de la card&lt;/h6&gt;
+            &lt;div class=&quot;pie texto--azul-B&quot;&gt;Ejemlo de pie&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card_cuerpo&quot;&gt;
+            &lt;p class=&quot;margen-bottom-base&quot;&gt; Hola Lorem ipsum dolor sit amet, consectetur 
+            adipisicing elit. Ipsum mollitia tenetur maxime qui ab vitae eum perspiciatis 
+            laborum aliquid, vel porro quam sapiente repudiandae?&lt;/p&gt;
+            &lt;a class=&quot;boton--mini radius btn3&quot; href=&quot;#&quot;&gt;apartado mini&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+  
+            </div>
+
+            <!--Formulario-->
+
+            <div>
+                <h6 class="texto--azul-B margen-top">Formulario</h6>
+                <p class="instrucciones">Podemos establecer vínculos en la página con recursos mínimos con los links simples. Puede probar el efecto de hover en el ejempplo bajo estas líneas.<span class="pie">(clase: formulario radius--plus sombra)</span></p>
+
+                <div class="ejemplo margen-bottom-base">             
+                    <form class="formulario radius--plus sombra" action="" method=”POST”>
+                        <h6 class="margen-bottom-base texto--gris-A">Ejemplo de formulario</h6>
+                        <label for="nombre"><p class="texto--azul-A negrita">Nombre</p></label>
+                        <input class="campo margen-bottom-base" type="text" id="nombre" name="nombre">
+                        <label for="primer_apellido"><p class="texto--azul-A negrita">Primer apellido</p></label>
+                        <input class="campo margen-bottom-base" type="text" id="primer_apellido" name="primer_apellido">
+                        <label for="segundo_apellido"><p class="texto--azul-A negrita">Segundo apellido</p></label>
+                        <input class="campo margen-bottom-base" type="text" id="segundo_apellido" name="segundo_apellido">
+                        <label for="mail"><p class="texto--azul-A negrita">Correo electrónico</p></label>
+                        <input class="campo margen-bottom-base" type="text" id="mail" name="mail">
+                        <label for="comentario"><p class="texto--azul-A negrita">Mensaje</p></label>
+                        <textarea class="campo margen-bottom-base" rows="20" cols="1" name="comentario"></textarea>
+                        <input class="boton--medio radius btn2" type="submit" value="Enviar">                         
+                    </form>  
+                </div>
+                <pre class="codigo"><code>&lt;form class=&quot;formulario radius--plus sombra&quot; action=&quot;&quot; method=&rdquo;POST&rdquo;&gt;
+    &lt;h6 class=&quot;margen-bottom-base texto--gris-A&quot;&gt;Ejemplo de formulario&lt;/h6&gt;
+    &lt;label for=&quot;nombre&quot;&gt;&lt;p class=&quot;texto--azul-A negrita&quot;&gt;Nombre&lt;/p&gt;&lt;/label&gt;
+    &lt;input class=&quot;campo margen-bottom-base&quot; type=&quot;text&quot; id=&quot;nombre&quot; name=&quot;nombre&quot;&gt;
+    &lt;label for=&quot;primer_apellido&quot;&gt;&lt;p class=&quot;texto--azul-A negrita&quot;&gt;Primer apellido&lt;/p&gt;&lt;/label&gt;
+    &lt;input class=&quot;campo margen-bottom-base&quot; type=&quot;text&quot; id=&quot;primer_apellido&quot; 
+    name=&quot;primer_apellido&quot;&gt;
+    &lt;label for=&quot;segundo_apellido&quot;&gt;&lt;p class=&quot;texto--azul-A negrita&quot;&gt;Segundo apellido&lt;/p&gt;&lt;/label&gt;
+    &lt;input class=&quot;campo margen-bottom-base&quot; type=&quot;text&quot; id=&quot;segundo_apellido&quot; 
+    name=&quot;segundo_apellido&quot;&gt;
+    &lt;label for=&quot;mail&quot;&gt;&lt;p class=&quot;texto--azul-A negrita&quot;&gt;Correo electr&oacute;nico&lt;/p&gt;&lt;/label&gt;
+    &lt;input class=&quot;campo margen-bottom-base&quot; type=&quot;text&quot; id=&quot;mail&quot; name=&quot;mail&quot;&gt;
+    &lt;label for=&quot;comentario&quot;&gt;&lt;p class=&quot;texto--azul-A negrita&quot;&gt;Mensaje&lt;/p&gt;&lt;/label&gt;
+    &lt;textarea class=&quot;campo margen-bottom-base&quot; rows=&quot;20&quot; cols=&quot;1&quot; name=&quot;comentario&quot;&gt;&lt;/textarea&gt;
+    &lt;input class=&quot;boton--medio radius btn2&quot; type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;                         
+&lt;/form&gt;</code></pre>
+                </div>
+
+
+            <a class="botonera--media boton--medio btn2 radius volver" href="#">Volver al menú</a>
+
+        </article>
+        
+    </section>
+
+<footer class="peq">Lorenzo Gómez. Gráfica interactiva. Usabilidad 2GB. Escuela Superior de Diseño de Madrid, 2021</footer>
+
+</body>
+

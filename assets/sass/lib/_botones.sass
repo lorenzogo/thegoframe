@@ -1,0 +1,186 @@
+/*botones*/
+
+
+.boton--grande
+    background-color: $azul-B
+    width: 100%
+    min-width: max-content
+    height: $base * 5.5
+    justify-content: center
+    align-items: center
+    padding: $base * 1.5 $base * 2
+    margin: $base / 4
+    position: relative
+    display: block
+    &:hover ~ .submenu
+        display: block
+    @media screen and (max-width: $movil)        
+        width: 100%
+        min-width: 280px
+        text-align: center
+        margin: 0
+        margin-bottom: $base / 2
+        
+
+.boton--grande:hover
+    color: $azul-A
+
+.boton--grande a:hover
+    color: $azul-A
+
+.boton--grande a:link
+    color: $blanco
+
+.boton--grande:link
+    color: $blanco
+
+    
+
+
+.boton--grande:visited, a:visited
+    color: $blanco
+
+
+.boton--grande--principal
+    background-color: $azul-A
+.boton--grande--principa a:hover
+    color: $azul-C
+
+
+.boton--grande--inactivo
+    background-color: $azul-C
+.boton--grande--inactivo:hover
+    color: $blanco
+
+
+
+
+.boton--medio
+    background-color: $negro
+    width: 100%
+    min-width: max-content
+    height: $base * 4
+    justify-content: center
+    align-items: center
+    padding: $base * 1 $base * 2
+    margin: $base / 8
+@media screen and (max-width: $movil)
+    .boton--medio
+        width: 100%
+        min-width: 270px
+        text-align: center
+        margin: 0
+        margin-bottom: $base / 2
+
+.boton--medio:hover
+    background-color: $gris-A
+    color: $blanco
+
+.boton--medio:link
+    background-color: $negro
+    color: $blanco
+
+.boton--medio a:link
+    color: $blanco
+
+.boton--medio:visited, .boton--medio a:visited
+    background-color: $negro
+    color: $blanco
+
+
+.boton--medio:active, .boton--medio a:active
+    background-color: $negro
+    color: $blanco
+
+
+.boton--medio--inactivo
+    background-color: $gris-C
+.boton--medio--inactivo:hover
+    background-color: $gris-C
+
+.boton--medio:visited, a:visited
+    color: $blanco
+
+.boton--mini
+    background-color: $azul-B
+    width: max-content
+    min-width: max-content
+    height: $base * 4
+    justify-content: center
+    align-items: center
+    padding: $base * 1.25 $base * 2
+    margin: $base / 8
+
+.boton--mini:hover
+    color: $azul-A
+
+
+.boton--mini--inactivo
+    background-color: $azul-C
+.boton--mini--inactivo:hover
+    color: $blanco
+
+            
+/*botonera por defecto*/
+
+.botonera--grande
+    display: flex
+    width: max-content
+    justify-content: center
+    align-items: center
+    padding: $base * 2 $base * 3
+
+@media screen and (max-width: $movil)
+    .botonera--grande
+        flex-direction: column
+        width: auto
+        padding: 0
+        
+
+
+.botonera--media
+    width: 100%
+    width: max-content
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+@media screen and (max-width: $movil)
+    .botonera--media
+        flex-direction: column
+        /*padding: 0 $base * 3*/
+
+
+
+.anidada
+    position: absolute
+    bottom: -128px
+    padding: 2px
+@media screen and (max-width: $movil)
+    .anidada
+            position: initial
+            padding: 0
+
+
+/*botón menu hamburgesa*/
+
+.boton-burger
+    display: none
+    width: 28px
+    height: 20px
+    margin: $base * 1.5
+@media screen and (max-width: $movil)
+    .boton-burger
+        display: block
+        z-index: 1
+        position: absolute
+        top: $base * 8
+        right: $base * 2
+
+    
+.burguer
+    background-color: $negro
+    width: 28px
+    height: 4px
+    margin: $base / 2 0px
+    

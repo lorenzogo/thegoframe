@@ -1,0 +1,42 @@
+/*menus*/
+
+.menu
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: $base * 2
+    width: 100%
+    min-width: 840px
+    height: 128px
+    position: relative
+    
+    @media screen and (max-width: $movil)
+        display: block
+        position: relative
+        height: 100%
+        width: 100%
+        min-width: 300px
+        padding: $base * 2
+
+.submenu
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    padding-top: $base * 5
+    display: flex
+    z-index: 1
+    display: none
+    @media screen and (max-width: $movil)
+        display: none
+        width: 100%
+        padding-top: 0
+        position: static
+
+
+
+
+
+
+

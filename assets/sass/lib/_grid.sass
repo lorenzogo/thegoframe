@@ -1,0 +1,92 @@
+/*rejillas y tablas*/
+
+
+/*REJILLA BASE DE 12, 8 Y 4 COLUMNAS POR 3 FILAS*/
+
+.rejilla
+    max-width: 1024px
+    width: 1024px
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-gap: $base * 2
+    @media screen and (max-width: $tablet)
+        max-width: 800px
+        grid-template-columns: repeat(8, 1fr)
+        grid-gap: $base * 1.75
+    @media screen and (max-width: $movil)
+        max-width: 400px
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: $base * 1.5
+
+.rejilla__cell
+    width: 100%
+    height: 150px
+    background-color: $blanco
+    padding: $base
+
+
+/*TABLA DE DATOS*/
+
+.tabla
+    display: flex
+    flex-direction: column
+    height: 100%
+    width: 100%
+    
+@media screen and (max-width: $movil)
+    .tabla
+        flex-direction: row
+        overflow-x: scroll
+        position: relative
+        &.ubicacion
+            grid-column: span 4
+
+        .tabla__cabecera
+            position: sticky
+            top: 0
+            left: 0
+            width: auto
+
+        
+
+.ubicacion
+    grid-column: 2 / span 10
+    @media screen and (max-width: $tablet)
+        grid-column: span 10
+    @media screen and (max-width: $movil)
+        grid-column: span 2
+
+
+.tabla__fila
+    background-color: $blanco
+    height: 100%
+    width: 100%
+    display: flex
+@media screen and (max-width: $movil)
+    .tabla__fila
+        flex-direction: column
+
+
+.tabla__celda
+    height: 48px
+    width: 100%
+    padding: $base * 1  
+@media screen and (max-width: $movil)
+    .tabla__celda
+        padding: $base * 1 
+
+
+.cifras--responsive
+    width: 40%
+    padding-right: $base * 4
+    text-align: right
+    @media screen and (max-width: $movil)
+        text-align: left
+        width: 100%
+
+
+
+
+
+
+

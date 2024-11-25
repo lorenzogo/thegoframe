@@ -1,0 +1,184 @@
+/*aspectos generales*/
+
+html
+    font-size: 16px
+
+body
+    background-color: $gris_C
+
+footer
+    width: 100%
+    height: $base * 12
+    background-color: $negro
+    color: $blanco
+    padding: $base * 3 $base * 8
+
+
+
+/*colores de fondo*/
+
+.negro
+    background-color: $negro
+
+.blanco
+    background-color: $blanco
+
+.verde
+    background-color: $verde
+
+
+.azul-A
+    background-color: $azul-A
+
+.azul-B
+    background-color: $azul-B
+
+.azul-C
+    background-color: $azul-C
+
+
+.negro
+    background-color: $negro
+
+.blanco
+    background-color: $blanco
+
+
+.gris-A
+    background-color: $gris-A
+
+.gris-B
+    background-color: $gris-B
+
+.gris-C
+    background-color: $gris-C
+
+
+
+/*colores de texto*/
+
+.texto--azul-A
+    color: $azul-A
+
+.texto--azul-B
+    color: $azul-B
+
+.texto--azul-C
+    color: $azul-C
+
+
+.texto--negro
+    color: $negro
+
+.texto--blanco
+    color: $blanco
+
+
+.texto--gris-A
+    color: $gris-A
+
+.texto--gris-B
+    color: $gris-B
+
+.texto--gris-C
+    color: $gris-C
+
+
+/*borders*/
+
+.radius
+    border-radius: $radius
+
+.radius--plus
+    border-radius: $radius * 4
+
+.radius--plus--top
+    border-radius: $radius * 4 $radius * 4 0 0
+
+.radius--plus--left
+    border-radius: $radius * 4 0 0 $radius * 4
+
+.contorno
+    border: solid 1px $negro
+
+.relative
+    position: relative
+    width: inherit
+    padding-right: 4px
+    @media screen and (max-width: $movil)
+        padding-right: 0px
+      
+
+/*sombras*/
+.sombra    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+
+/*flex*/
+
+.flex
+    display: flex
+
+.horizontal
+    flex-direction: wrap
+
+.vertical
+    flex-direction: column
+
+.flex-center
+    align-items: center
+
+.flex-izquierda
+    justify-content: left
+    
+
+/*margen*/
+.sinpadding
+    padding: 0
+
+.padding_general
+    padding: $base * 2
+
+.padding_left
+    padding-left: $base * 2
+
+/*----------margenes----------*/
+
+/*margen_superior*/
+
+.margen_general
+    margin: $base * 2
+
+.margen-top-base
+    margin-top: $base
+
+.margen-top
+    margin-top: $base * 4
+
+.margen-bottom-base
+    margin-bottom:  $base
+
+.margen-bottom
+    margin-bottom: $base * 4
+
+.margen-left
+    margin-left: $base * 4
+
+.margen-right
+    margin-right: $base * 4
+
+.margen-right__grande
+    margin-right: $base * 32
+    @media screen and ( max-width:$movil)
+            margin-right: $base * 8
+
+        
+/*otros*/
+
+.display_block
+    display: block
+
+    
+
+
+

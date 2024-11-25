@@ -1,0 +1,321 @@
+/*estilos tipográficos*/
+
+/*RECURSOS*/
+
+/*Roboto Slab*/
+
+@font-face
+    font-family: 'Roboto Slab' 
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),url('../fonts/RobotoSlab-Medium.woff') format('woff') 
+    font-weight: 500 
+    font-style: normal 
+    font-display: swap
+
+@font-face
+    font-family: 'Roboto Slab' 
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),url('../fonts/RobotoSlab-Bold.woff') format('woff') 
+    font-weight: bold 
+    font-style: normal 
+    font-display: swap      
+    
+    
+/*Roboto*/
+
+@font-face
+    font-family: 'Roboto' 
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),url('../fonts/Roboto-Bold.woff') format('woff') 
+    font-weight: bold 
+    font-style: normal 
+    font-display: swap 
+ 
+
+@font-face
+    font-family: 'Roboto' 
+    src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),url('../fonts/Roboto-BoldItalic.woff') format('woff') 
+    font-weight: bold 
+    font-style: italic 
+    font-display: swap 
+ 
+
+@font-face  
+    font-family: 'Roboto' 
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),url('../fonts/Roboto-Regular.woff') format('woff') 
+    font-weight: normal 
+    font-style: normal 
+    font-display: swap 
+ 
+
+@font-face
+    font-family: 'Roboto' 
+    src: url('../fonts/Roboto-Italic.woff2') format('woff2'),url('../fonts/Roboto-Italic.woff') format('woff') 
+    font-weight: normal 
+    font-style: italic 
+    font-display: swap 
+ 
+
+
+@font-face
+    font-family: 'Roboto' 
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),url('../fonts/Roboto-Medium.woff') format('woff') 
+    font-weight: 500 
+    font-style: normal 
+    font-display: swap 
+ 
+
+@font-face
+    font-family: 'Roboto' 
+    src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),url('../fonts/Roboto-MediumItalic.woff') format('woff') 
+    font-weight: 500 
+    font-style: italic 
+    font-display: swap 
+ 
+
+/*Roboto Condensed*/
+
+@font-face  
+    font-family: 'roboto_condensedbold' 
+    src: url('../fonts/robotocondensed-bold-webfont.woff2') format('woff2'),url('../fonts/robotocondensed-bold-webfont.woff') format('woff') 
+    font-weight: normal 
+    font-style: normal 
+    font-display: swap 
+
+/*iconos*/
+
+@font-face 
+  font-family: "iconvault"
+  src: url("../fonts/iconvault_a63e96cfcee7f8d12255558f3e47d307.woff") format("woff")
+  font-weight: normal
+  font-style: normal
+
+
+
+
+
+/*LISTADO DE ESTILOS*/
+
+.cursiva
+    font-style: italic
+
+.negrita
+    font-weight: bold
+
+h1
+    font-family: $principal
+    font-weight: bold
+    font-size: 8em
+    line-height: 1em
+@media screen and (max-width: $tablet)
+    h1
+        font-size: 4em
+@media screen and (max-width: $movil)
+    h1
+        font-size: 3.4em
+
+h2
+    font-family: $principal
+    font-weight: bold
+    font-size: 6em
+    line-height: 1em
+@media screen and (max-width: $tablet)
+    h2
+        font-size: 3.5em
+@media screen and (max-width: $movil)
+    h2
+        font-size: 2.8em
+
+
+h3
+    font-family: $principal
+    font-weight: bold
+    font-size: 4em
+    line-height: 1em
+@media screen and (max-width: $tablet)
+    h3
+        font-size: 3em
+@media screen and (max-width: $movil)
+    h3
+        font-size: 2.2em
+
+h4
+    font-family: $principal
+    font-weight: bold
+    font-size: 3em
+    line-height: 1em
+@media screen and (max-width: $tablet)
+    h4
+        font-size: 2.37em
+@media screen and (max-width: $movil)
+    h4
+        font-size: 1.8em
+
+h5
+    font-family: $detalle
+    font-weight: normal
+    font-size: 2em
+    line-height: 1em
+@media screen and (max-width: $tablet)
+    h5
+        font-size: 1.6em
+
+h6
+    font-family: $detalle
+    font-weight: normal
+    font-size: 1.25em
+    line-height: 1em
+    letter-spacing: 0.02em
+    padding-bottom: $base
+
+.entradilla
+    font-family: $secundaria
+    font-weight: 500
+    font-size: 2em
+    line-height: 1em
+    font-style: italic
+@media screen and (max-width: $tablet)
+    .entradilla
+        font-size: 1.5em
+        line-height: 1em
+@media screen and (max-width: $movil)
+    .entradilla
+        font-size: 1.2em
+
+p
+    font-family: $secundaria
+    font-weight: normal
+    font-size: 1em
+    line-height: 1.2em
+    padding-right: $base
+    padding-bottom: $base
+    .negrita
+        font-weight: 700
+@media screen and (max-width: $movil)
+    p
+        font-size: 0.93em
+
+
+.masinfo
+    font-family: $secundaria
+    font-weight: 400
+    font-size: 0.9em
+    line-height: 1.2em
+
+
+.pie
+    font-family: $principal
+    font-weight: 500
+    font-size: 0.9em
+    line-height: 1em
+
+.peq
+    font-family: $secundaria
+    font-weight: 400
+    font-size: 0.75em
+    line-height: 1em
+
+
+
+.btn1
+    font-family: $secundaria
+    font-weight: 500
+    font-size: 1.125em
+    letter-spacing: 0.02em
+    line-height: 1em
+    text-transform: uppercase
+    color: $blanco
+@media screen and (max-width: $tablet)
+    .btn1
+        font-size: 0.975em
+
+.btn2
+    font-family: $secundaria
+    font-weight: normal
+    font-size: 0.9em
+    letter-spacing: 0.02em
+    line-height: 1em
+    color: $blanco
+    text-transform: none
+@media screen and (max-width: $tablet)
+    .btn2
+        font-size: 0.8em
+
+
+.btn3
+    font-family: $secundaria
+    font-weight: bold
+    font-size: 0.8em
+    letter-spacing: 0.03em
+    line-height: 1em
+    color: $blanco
+
+.apartado
+    font-family: $secundaria
+    font-weight: 700
+    font-size: 1.25em
+    line-height: 1em
+
+.subapartado
+    font-family: $secundaria
+    font-weight: 400
+    font-size: 1em
+    line-height: 1em
+
+.linklinea
+    font-family: $secundaria
+    font-weight: 700
+    font-size: 1em
+    line-height: 1em
+    color: $azul-B
+.linklinea:hover
+    color: $azul-A
+    text-decoration-line: underline
+.linklinea:visited
+    color: $gris-B
+
+.linksimple
+    font-family: $principal
+    font-weight: 700
+    font-size: 0.87em
+    line-height: 1em
+    color: $azul-B
+    display: block
+.linksimple:hover
+    color: $azul-A
+    text-decoration-line: underline
+.linksimple:visited
+    color: $azul-B
+.linksimple_desactivado
+    color: $gris-C
+
+
+
+.justificado_derecha
+    text-align: right
+
+.justificado_izquierda
+    text-align: left
+
+
+
+.cab_tabla
+    font-family: $detalle
+    font-weight: normal
+    font-size: 1.25em
+    line-height: 1em
+    letter-spacing: 0.02em
+    padding-bottom: $base
+    text-align: left
+     
+
+
+.icono
+    font-family: $icono
+    font-size: 2em  
+    vertical-align: middle
+    padding: 0 0.2em
+
+.texto_con_iconos
+    line-height: 2.2em
+
+
+
+    

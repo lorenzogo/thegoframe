@@ -1,0 +1,147 @@
+/* estilos para el manual*/
+
+.cabecera
+    padding: $base * 2
+
+.intro
+    width: 60%
+    @media screen and (max-width: $tablet)
+        width: 80%
+    @media screen and (max-width: $movil)
+        width: 90%
+
+
+.menu_manual
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    min-width: 840px
+    height: 128px
+    position: relative
+  
+    @media screen and (max-width: $movil)
+        display: block
+        position: relative
+        height: 100%
+        width: 100%
+        min-width: 300px
+
+.seccion
+    padding: $base * 2
+
+.titulo-contenedor
+    margin-left: $base * 2.5
+
+.contenedor
+    max-width: 900px
+    width: 80%
+    height: fit-content
+    display: flex
+    flex-direction: column
+    background-color: $blanco
+    padding: $base * 3 $base * 3
+    margin: 0 $base * 2
+    margin-bottom: $base * 3
+    @media screen and (max-width: $tablet)
+        width: 90%
+        min-width: 700px
+    @media screen and (max-width: $movil)
+        width: 90%
+        min-width: 420px
+        margin: 0 
+
+
+
+.instrucciones
+    padding-top: $base 
+    margin-bottom: $base 
+    @media screen and (max-width: $tablet)
+        width: 70%
+    @media screen and (max-width: $movil)
+        width: 90%
+
+
+.codigo
+    width: 100%
+    max-width: 900px
+    height: 100%
+    font-size: $texto_base * 0.85
+    line-height: 1.5em
+    padding: $base + 12 $base * 4
+    color: $gris-C
+    background-color: $gris-A
+    margin-bottom: $base * 2
+    overflow-x: scroll
+    @media screen and (max-width: $tablet)
+        width: 80%
+        min-width: 600px
+        overflow-x: scroll
+    @media screen and (max-width: $movil)
+        font-size: $texto_base * 0.75
+        width: 100%
+        min-width: 300px
+        overflow-x: scroll
+
+.item
+    display: flex
+    align-items: left
+    margin-top: $base * 0,5
+    margin-bottom: $base
+    @media screen and (max-width: $tablet)
+        flex-direction: column
+
+
+.pastilla
+    width: $base  * 8
+    height: $base * 2
+    margin: $base
+    @media screen and (max-width: $movil)
+        width: $base * 4
+
+.pastilla--grande
+    width: $base  * 32
+    height: $base * 4
+    margin: 0 $base*2 $base 0 
+    @media screen and (max-width: $movil)
+        width: $base * 16
+
+
+.grupo
+    font-family: $detalle
+    font-weight: normal
+    font-size: 1em
+    line-height: 1em
+    letter-spacing: 0.02em
+    padding: $base $base  0 0
+
+
+.roboto_slab
+    font-family: $principal
+    font-size: 2em
+    font-weight: 400
+
+.roboto
+    font-family: $secundaria
+    font-size: 2em
+    font-weight: 500
+
+.roboto_condensed
+    font-family: $detalle
+    font-size: 2em
+    font-weight: 400
+
+.volver
+    min-width: 300px
+
+.ancho_rejilla
+    width: 100%
+
+.ejemplo
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $gris-C
+    width: 100%
+    padding: $base * 4 

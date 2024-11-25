@@ -1,0 +1,89 @@
+/*CONTENEDORES*/
+
+/*cards*/
+
+.card--vertical
+    background-color: $blanco
+    display: flex
+    flex-direction: column
+    width: 100%
+    max-width: $base * 48
+    min-width: $base * 44
+    height: 580px
+
+.card--horizontal
+    background-color: $blanco
+    display: flex
+    width: 100%
+    height: 100%
+    max-width: $base * 88
+    min-width: $base * 70
+    height: $base * 48
+@media screen and (max-width: $movil)
+    .card--horizontal
+        flex-direction: column
+        width: 100%
+        max-width: $base * 48
+        min-width: $base * 44
+        height: 580px
+
+.card__image
+    object-fit: cover
+    width: 100%
+    height: 65%
+@media screen and (max-width: $movil)
+    .card__image
+        border-radius: $radius * 4 $radius * 4 0 0
+    
+.image_horz
+    height: inherit
+    @media screen and (max-width: $movil)
+        height: 65%
+        
+
+.card__datos
+    height: auto
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: $base * 3
+
+.card__cabecera
+    height: 20%
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 0.5em
+
+.card__cuerpo
+    height: 80%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    margin-bottom: 0.5em
+
+
+/*formulario*//import css-variables from 
+
+.formulario
+    background-color: $blanco
+    display: flex
+    flex-direction: column
+    width: 600px
+    padding: $base * 4
+    @media screen and ( max-width:$movil )
+        width: 350px
+        padding: $base * 3
+        
+
+.campo
+    background-color: $azul-C
+    padding: $base * 0.8
+     
+
+
+
